@@ -1,9 +1,14 @@
 package Bridge;
 
 public abstract class ControlRemoto {
-    protected Dispositivo dispositivo; // ¡Este es el puente!
+    protected Dispositivo dispositivo; // ¡ESTE ES EL PUENTE!
 
     public ControlRemoto(Dispositivo dispositivo) {
+        this.dispositivo = dispositivo;
+    }
+
+    // Permite cambiar el dispositivo en tiempo de ejecución
+    public void setDispositivo(Dispositivo dispositivo) {
         this.dispositivo = dispositivo;
     }
 
